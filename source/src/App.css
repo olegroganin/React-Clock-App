@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.wrapper {
+  background: url(../src/darksky.jpg) center no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  position: absolute;
+}
+
+.container {
+  padding: 210px 15px 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.clock {
+  font-size: 120px;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
+}
+
+.greeting {
+  font-size: 100px;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  text-align: center;
+  padding-bottom: 50px;
+  text-shadow: 2px 2px 2px black;
+}
+
+@media (max-width: 991px) {
+  .clock {
+    font-size: 90px;
+  }
+  .greeting {
+    font-size: 90px;
+  }
+}
+
+@media (max-width: 767px) {
+  .clock {
+    font-size: 70px;
+  }
+  .greeting {
+    font-size: 37px;
+  }
+}
